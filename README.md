@@ -1,7 +1,10 @@
 # Tugas 8: Flutter Form
 Nama: Naznien Fevrianne Malano
+<br>
 NPM: 2106751404
+<br>
 Kelas: B / NIP
+<br>
 
 ## Jelaskan perbedaan `Navigator.push`dan `Navigator.pushReplacement`
 
