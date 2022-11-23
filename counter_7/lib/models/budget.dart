@@ -1,7 +1,7 @@
-import 'package:counter_7/add_budget.dart';
+import 'package:counter_7/pages/add_budget.dart';
 import 'package:flutter/material.dart';
 import 'package:counter_7/main.dart';
-import 'package:counter_7/budget_data.dart';
+import 'package:counter_7/pages/budget_data.dart';
 class Budget {
     static List<Budget> listBudget = [];
     String title;

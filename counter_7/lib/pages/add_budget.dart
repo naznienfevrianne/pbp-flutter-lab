@@ -1,8 +1,8 @@
 
 import 'package:counter_7/main.dart';
 import 'package:flutter/material.dart';
-import 'package:counter_7/budget.dart';
-import 'package:counter_7/budget_data.dart';
+import 'package:counter_7/models/budget.dart';
+import 'package:counter_7/widgets/drawer.dart';
 
 class AddBudget extends StatefulWidget {
     const AddBudget({super.key});
@@ -24,45 +24,7 @@ class _AddBudgetState extends State<AddBudget> {
             appBar: AppBar(
                 title: const Text ("Add Budget"),
             ),
-            drawer: Drawer(
-                child: Column(
-                    children: [
-                        // Menambahkan clickable menu
-                        ListTile(
-                            title: const Text('Counter'),
-                            onTap: () {
-                                // Route menu ke halaman utama
-                                Navigator.pushReplacement(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => const MyHomePage(
-                                            title: 'Program Counter',
-                                        ),
-                                    ),
-                                );
-                            },
-                        ),
-                        ListTile(
-                            title: const Text('Tambah Budget'),
-                            onTap: () {
-                                Navigator.pushReplacement(
-                                    context,
-                                    MaterialPageRoute(builder: (context) => const AddBudget()),
-                                );
-                            },
-                        ),
-                        ListTile(
-                            title: const Text('Data Budget'),
-                            onTap: () {
-                                Navigator.pushReplacement(
-                                    context,
-                                    MaterialPageRoute(builder: (context) => const BudgetData()),
-                                );
-                            },
-                        ),
-                    ],
-                ),
-            ),
+            drawer: const MyDrawer(),
             body: Form(
                 key: _formKey,
                 child: Padding(
